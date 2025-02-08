@@ -5,7 +5,7 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-all_df = pd.read_csv("main_data.csv", delimiter=",")
+all_df = pd.read_csv("Dashboard/main_data.csv", delimiter=",")
 
 def create_rent_by_hour(df):
     bike_rented_hour = main_df.groupby(by="hr")["cnt_hour"].sum().reset_index()
